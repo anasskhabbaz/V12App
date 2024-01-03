@@ -13,7 +13,7 @@
             align-items: center;
             justify-content: center;
             background-color: white;
-            color: #445660; /* Change the text color to #445660 */
+            color: #445660;
             font-family: 'Arial', sans-serif;
         }
 
@@ -27,7 +27,7 @@
 
         .member-card img {
             max-width: 100%;
-            border-radius: 50%;
+            border-radius: 8px; /* Set border-radius to 8px for a square photo */
         }
 
         button {
@@ -35,7 +35,7 @@
             font-size: 16px;
             cursor: pointer;
             background-color: #19c5bd;
-            color: #445660; /* Change the text color to #445660 */
+            color: #445660;
             border: none;
             border-radius: 5px;
             margin: 5px;
@@ -44,9 +44,8 @@
 </head>
 <body>
     <div class="member-card">
-        <img src="emilia_photo.jpg" alt="Emilia's Photo">
+        <img src="emilia_photo.jpg">
         <h2>Emilia</h2>
-        <p>Team Lead</p>
         <button onclick="handleMemberClick('Josh')">Josh</button>
         <button onclick="handleMemberClick('Evelyn')">Evelyn</button>
         <button onclick="handleMemberClick('Marcy')">Marcy</button>
