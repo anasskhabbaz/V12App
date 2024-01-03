@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>James's Team Members</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="handleMemberClick('Mary')">Mary</button>
+    <button onclick="handleMemberClick('Kelly')">Kelly</button>
+    <button onclick="handleMemberClick('Wade')">Wade</button>
+    <button onclick="handleMemberClick('Celine')">Celine</button>
+    <button onclick="handleMemberClick('Faith')">Faith</button>
+    <button onclick="handleMemberClick('Dave')">Dave</button>
+    <button onclick="handleMemberClick('Henry')">Henry</button>
+
+    <script>
+        function handleMemberClick(member) {
+            alert("Button clicked for " + member);
+            // You can add more functionality here if needed
+        }
+    </script>
+</body>
+</html>

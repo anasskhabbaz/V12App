@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: black;
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="handleTeamClick('Emilia')">Emilia</button>
+    <button onclick="handleTeamClick('James')">James</button>
+    <button onclick="handleTeamClick('Justin')">Justin</button>
+    <button onclick="handleTeamClick('Logan')">Logan</button>
+
+    <script>
+        function handleTeamClick(team) {
+            // Redirect to a new page with the team's members when the team button is clicked
+            window.location.href = team.toLowerCase() + '_members.html';
+        }
+    </script>
+</body>
+</html>
