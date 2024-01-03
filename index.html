@@ -9,12 +9,26 @@
             margin: 0;
             padding: 0;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: black;
-            color: white;
+            background-color: #ffffff; /* Change the background color to white (#ffffff) */
+            color: black; /* Change the text color to black */
             font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px; /* Add border-radius for rounded corners */
         }
 
         button {
@@ -25,17 +39,23 @@
             color: white;
             border: none;
             border-radius: 5px;
+            margin: 5px;
         }
     </style>
 </head>
 <body>
+    <header>
+        <!-- Add your logo image here -->
+        <img src="v12_logo.png" alt="Your Logo">
+    </header>
+
     <div id="app">
         <button onclick="handleButtonClick()">Marketing Advisors</button>
     </div>
 
     <script>
         function handleButtonClick() {
-            // Redirect to another page when the button is clicked
+            // Redirect to teams.html when the button is clicked
             window.location.href = "teams.html";
         }
     </script>
