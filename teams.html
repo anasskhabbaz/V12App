@@ -18,11 +18,21 @@
             font-family: 'Arial', sans-serif;
         }
 
+        #teamContainer {
+            text-align: center;
+        }
+
+        #teamImage {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
         button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            background-color: #19c5bd; /* Change the button color to #19c5bd */
+            background-color: #19c5bd;
             color: #445660;
             border: none;
             border-radius: 5px;
@@ -31,10 +41,16 @@
     </style>
 </head>
 <body>
-    <button onclick="handleTeamClick('Emilia')">Emilia</button>
-    <button onclick="handleTeamClick('James')">James</button>
-    <button onclick="handleTeamClick('Justin')">Justin</button>
-    <button onclick="handleTeamClick('Logan')">Logan</button>
+    <div id="teamContainer">
+        <!-- Image box for the team -->
+        <img id="teamImage" src="v12_logo.jpg" alt="Team Image">
+        
+        <!-- Buttons for each team member -->
+        <button onclick="handleTeamClick('Emilia')">Emilia</button>
+        <button onclick="handleTeamClick('James')">James</button>
+        <button onclick="handleTeamClick('Justin')">Justin</button>
+        <button onclick="handleTeamClick('Logan')">Logan</button>
+    </div>
 
     <script>
         function handleTeamClick(team) {
