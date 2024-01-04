@@ -3,27 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James's Team Members</title>
+    <title>James' Team Members</title>
     <style>
         body {
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            background-color: black;
-            color: white;
+            background-color: white;
+            color: #445660;
             font-family: 'Arial', sans-serif;
+        }
+
+        .member-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .member-card img {
+            max-width: 100%;
+            border-radius: 8px; /* Set border-radius to 8px for a square photo */
         }
 
         button {
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
-            background-color: #3498db;
-            color: white;
+            background-color: #19c5bd;
+            color: #445660;
             border: none;
             border-radius: 5px;
             margin: 5px;
@@ -31,13 +43,20 @@
     </style>
 </head>
 <body>
-    <button onclick="handleMemberClick('Mary')">Mary</button>
-    <button onclick="handleMemberClick('Kelly')">Kelly</button>
-    <button onclick="handleMemberClick('Wade')">Wade</button>
-    <button onclick="handleMemberClick('Celine')">Celine</button>
-    <button onclick="handleMemberClick('Faith')">Faith</button>
-    <button onclick="handleMemberClick('Dave')">Dave</button>
-    <button onclick="handleMemberClick('Henry')">Henry</button>
+    <div class="member-card">
+        <img src="james_photo.jpg">
+        <h2>Emilia</h2>
+        <button onclick="handleMemberClick('Mary')">Mary</button>
+        <button onclick="handleMemberClick('Faith')">Faith</button>
+        <button onclick="handleMemberClick('Celine')">Celine</button>
+        <button onclick="handleMemberClick('Henry')">Henry</button>
+        <button onclick="handleMemberClick('Kelly')">Kelly</button>
+        <button onclick="handleMemberClick('Dave')">Dave</button>
+        <button onclick="handleMemberClick('Wade')">Wade</button>
+        <!-- Add more buttons for other team members -->
+    </div>
+
+    <!-- Repeat the above member card structure for each team member -->
 
     <script>
         function handleMemberClick(member) {
